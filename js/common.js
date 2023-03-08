@@ -1,4 +1,9 @@
 /*================================= Sticky Header Starts =================================*/
+AOS.init({
+    easing: "ease-out-back",
+    mirror: true,
+    duration: 800,
+});
 
 var didScroll;
 var lastScrollTop = 0;
