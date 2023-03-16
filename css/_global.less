@@ -388,7 +388,7 @@ header {
 }
 
 .hero-wrap {
-  padding: 200px 0 200px;
+  padding: 200px 20px 200px;
   overflow: hidden;
   position: relative;
 }
@@ -413,6 +413,7 @@ header {
   align-items: center;
   position: relative;
   z-index: 1;
+  flex-direction: column;
 }
 
 .work-bg {
@@ -422,6 +423,7 @@ header {
   background-color: var(--blue);
   height: 100%;
   transform: translateY(-100px);
+  border: 2px solid #000;
 }
 
 .work-container {
@@ -522,4 +524,130 @@ header {
 .sticker-4 {
   top: 50%;
   right: 80px;
+}
+
+.work-tag {
+  min-width: 187px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 36px;
+  padding: 14px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 11px;
+
+  &:nth-child(even) {
+    background: var(--green);
+  }
+}
+
+.work-tags {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.work-tag {
+  &-1 {
+    transform: translate(0px, -90px) rotate(-8deg);
+  }
+  &-2 {
+    transform: translate(0px, -120px)
+      rotate(-4deg);
+  }
+  &-3 {
+    transform: translate(0px, -130px) rotate(0deg);
+  }
+  &-4 {
+    transform: translate(0px, -120px) rotate(4deg);
+  }
+  &-5 {
+    transform: translate(0px, -90px) rotate(8deg);
+  }
+}
+
+.client-stars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.client-box {
+  border: 2px solid #000000;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #fff;
+  height: 100%;
+}
+
+.client-head {
+  padding: 36px 40px;
+  background: var(--green);
+  border-bottom: 2px solid #000;
+}
+.client-content {
+  padding: 56px 42px;
+}
+.client-content p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+.swiper-work {
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+}
+.client-head-txt {
+  font-weight: 500;
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #000000;
+}
+
+.work-client-wrap {
+  background-color: #e5fcfc;
+  position: relative;
+  padding-bottom: 350px;
+}
+
+.work-swiper-wrap {
+  transform: translateY(-330px);
+  position: relative;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  .swiper-slide {
+    height: auto;
+  }
+}
+
+.client-stars {
+  h5 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: right;
+    color: #000000;
+  }
+}
+
+.blog-wrap {
+  background: var(--pink);
+  padding: 200px 0;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }

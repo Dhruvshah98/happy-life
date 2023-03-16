@@ -8,11 +8,31 @@
   .container {
     max-width: 1440px;
   }
+  .hero-head h2 {
+    font-size: 130px;
+    line-height: 140px;
+  }
+  .sticker {
+    scale: 0.9;
+  }
 }
 
 @media all and (max-width: 1440px) {
   .container {
     max-width: 1280px;
+  }
+  .hero-head p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .hero-head h2 {
+    font-size: 115px;
+    line-height: 125px;
+  }
+  .hero-wrap {
+    padding: 120px 20px 120px;
+    overflow: hidden;
+    position: relative;
   }
 }
 
@@ -20,34 +40,147 @@
   .container {
     max-width: 1200px;
   }
+  .hero-wrap {
+    padding: 100px 20px 100px;
+    overflow: hidden;
+    position: relative;
+  }
+  .hero-head h2 {
+    font-size: 100px;
+    line-height: 105px;
+  }
+  .hero-head p {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .button span {
+    height: 110px;
+    padding: 0 40px;
+  }
+  .button {
+    height: 110px;
+    width: 210px;
+  }
 }
 
 @media all and (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
+  .main-container {
+    padding: var(--header-height) 30px 0;
+  }
+  .sticker {
+    scale: 0.6;
+  }
 }
 
 @media all and (max-width: 990px) {
+  .hero-head h2 {
+    font-size: 80px;
+    line-height: 90px;
+  }
+  .hero-head p {
+    font-size: 24px;
+  }
+  .hero-img-wrap {
+    width: 60%;
+  }
 }
 
 @media all and (max-width: 768px) {
   .container {
     max-width: 100%;
   }
+  .hero-head h2 {
+    font-size: 64px;
+    line-height: 1.2;
+  }
+  .hero-head p {
+    font-size: 20px;
+  }
+  .button span {
+    height: 100%;
+    padding: 0 30px;
+    font-size: 20px;
+  }
+  .button {
+    height: 90px;
+    width: 170px;
+  }
+  .button {
+    height: 90px;
+    width: 170px;
+  }
+  .button img {
+    margin-left: 8px;
+    scale: 0.8;
+  }
+  .sticker {
+    scale: 0.5;
+  }
+  .learn-more {
+    scale: 0.6;
+  }
 }
 
 @media all and (max-width: 640px) {
+  .hero-img-wrap {
+    position: static;
+    width: 100%;
+    transform: translateX(0) translateY(30px);
+  }
+  .main-container {
+    padding: var(--header-height) 16px 0;
+  }
+  .hero-wrap {
+    padding: 100px 0px 60px;
+  }
+  .hero-head p {
+    font-size: 18px;
+  }
+  .hero-head h2 {
+    font-size: 60px;
+  }
+  .sticker {
+    scale: 0.4;
+  }
 }
 
 @media all and (max-width: 576px) {
+  .main-container {
+    padding: var(--header-height) 10px 0;
+  }
 }
 
 @media all and (max-width: 480px) {
+  .hero-head p {
+    font-size: 16px;
+  }
+  .hero-head h2 {
+    font-size: 52px;
+  }
+  .sticker-1 {
+    top: -80px;
+  }
+}
+@media all and (max-width: 420px) {
+  .hero-head h2 {
+    font-size: 48px;
+  }
 }
 
 @media all and (max-width: 400px) {
+  .hero-head h2 {
+    font-size: 44px;
+  }
+  .hero-img-wrap {
+    transform: translateX(0) translateY(-20px);
+  }
 }
 
 @media all and (max-width: 359px) {
+  .hero-head h2 {
+    font-size: 40px;
+  }
 }
