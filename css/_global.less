@@ -651,3 +651,64 @@ header {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
 }
+
+.industry-box {
+  border: 2px solid #000;
+  &:hover {
+    .industry-hover-txt {
+      opacity: 1;
+    }
+    .industry-txt {
+      background: #2252cc;
+      p {
+        color: #fff;
+      }
+    }
+  }
+}
+.industry-img-box {
+  position: relative;
+}
+.industry-img {
+  height: 360px;
+  width: 100%;
+  border-bottom: 2px solid #000;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.industry-hover-txt {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  z-index: 1;
+  transition: 0.5s;
+  padding: 0 20px;
+  p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+  }
+}
+.industry-txt {
+  background: #fff;
+  padding: 60px 40px;
+  transition: 0.5s;
+  p {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 41px;
+    text-align: center;
+    color: #000000;
+  }
+}
