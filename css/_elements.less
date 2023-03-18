@@ -657,8 +657,8 @@ button:focus {
 .form-grp,
 .form-textarea-group {
   position: relative;
-  margin-top: 8px;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 60px;
 }
 
 .form-grp {
@@ -684,12 +684,10 @@ button:focus {
 }
 
 .form-field {
-  font-family: var(--input-font);
-  height: var(--input-height);
-  font-size: var(--input-fs-main);
-  border: 1px solid var(--input-border);
-  border-radius: 5px;
-  padding: 0 16px;
+  font-size: 24px;
+  border: none;
+  padding: 24px 0;
+  border-bottom: 1px solid #000;
   width: 100%;
   z-index: 2;
   position: relative;
@@ -708,7 +706,7 @@ button:focus {
 
 .form-field:focus,
 .form-field.field--not-empty {
-  border: 1px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 .form-field ~ .form-label {
