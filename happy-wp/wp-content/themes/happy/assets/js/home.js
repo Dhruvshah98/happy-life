@@ -2,12 +2,50 @@
 window.addEventListener("load", (event) => {
 
     const swiperWork = new Swiper('.swiper-work', {
-        slidesPerView: 4,
-        spaceBetween: 55,
+        slidesPerView: 1,
+        spaceBetween: 16,
         loop: true,
         speed: 5000,
         autoplay: {
             delay: 0
+        },
+        breakpoints: {
+            1801: {
+                slidesPerView: 3.6,
+                spaceBetween: 55,
+            },
+            1680: {
+                slidesPerView: 3.4,
+                spaceBetween: 50,
+            },
+            1540: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 2.7,
+                spaceBetween: 30,
+            },
+            990: {
+                slidesPerView: 2.2,
+                spaceBetween: 25,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            576: {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+            },
+            481: {
+                slidesPerView: 1.3,
+                spaceBetween: 20,
+            },
+            391: {
+                slidesPerView: 1.1,
+                spaceBetween: 20,
+            }
         }
     });
 

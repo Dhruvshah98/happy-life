@@ -1,4 +1,7 @@
-/*================================= Sticky Header Starts =================================*/
+
+
+
+$(".menu-btn").click/*================================= Sticky Header Starts =================================*/
 AOS.init({
     easing: "ease-out-back",
     mirror: true,
@@ -58,5 +61,17 @@ $(document).on('input', '.form-field', function () {
     }
 });
 /* Form Feild Functionality ends */
+
+
+
+$(document).on('click', '.menu-btn', function () {
+    $('.mobile-menu').addClass('in');
+    $('.menuOverlay').addClass('in');
+});
+
+$(document).on('click', '.cancel-btn', function () {
+    $('.mobile-menu').removeClass('in');
+    $('.menuOverlay').removeClass('in');
+});
 
 

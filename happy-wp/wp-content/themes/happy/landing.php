@@ -278,7 +278,7 @@ get_header();
                                         alt=""></span></a>
                         </div>
                         <div class="f-row">
-                            <div class="w50">
+                            <div class="w50 w-990-100">
                             <?php
 
 if( have_rows('blogs') ):
@@ -304,7 +304,7 @@ endif; ?>
                                     </div>
                                 </a> -->
                             </div>
-                            <div class="w50">
+                            <div class="w50 w-990-100">
                                 <div class="f-row">
                                     <div class="w100">
                                         <div class="blog-head">
@@ -312,7 +312,7 @@ endif; ?>
                                             <h2>What’s hot on the blog</h2>
                                         </div>
                                     </div>
-                                    <div class="w50">
+                                    <div class="w50  w-640-100">
                                         <a href="" class="blog-box">
                                             <div class="blog-img">
                                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/blog-3.png" alt="">
@@ -322,7 +322,7 @@ endif; ?>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="w50">
+                                    <div class="w50  w-640-100">
                                         <a href="" class="blog-box">
                                             <div class="blog-img">
                                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/blog-4.png" alt="">
@@ -332,7 +332,7 @@ endif; ?>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="w50">
+                                    <div class="w50  w-640-100">
                                         <a href="" class="blog-box">
                                             <div class="blog-img">
                                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/blog-5.png" alt="">
@@ -342,7 +342,7 @@ endif; ?>
                                             </div>
                                         </a>
                                     </div>
-                                    <a href="" class="w50">
+                                    <a href="" class="w50  w-640-100">
                                         <div class="blog-box border-round">
                                             <div class="blog-img">
                                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/blog-6.png" alt="">
@@ -358,8 +358,8 @@ endif; ?>
             <!-- blog ends -->
 
 
+            <div id="clients" class="hdr-link"></div>
             <!-- clients-starts -->
-
             <div class="clients-wrap">
                 <div class="container">
                     <div class="swiper-logo-nav">
@@ -377,7 +377,7 @@ endif; ?>
                                     while( have_rows('clients_slider') ): the_row(); ?>
                             <div class="swiper-slide">
                                 <div class="clients-logo-wrap">
-                                    <div class="f-row f-4">
+                                    <div class="f-row f-4 f-990-3 f-640-2">
                                         <?php if( have_rows('logos') ): 
                                                 while( have_rows('logos') ): the_row(); ?>
                                         <div class="f-col">
@@ -468,6 +468,8 @@ endif; ?>
             <?php endif; ?>
             <!-- rates-ends -->
 
+
+            <div id="industries" class="hdr-link"></div>
             <!-- industry-starts -->
             <?php
                 $industries_data = get_field('industries');
@@ -479,7 +481,7 @@ endif; ?>
                         <p><?php echo $industries_data['sub_title']; ?></p>
                     </div>
                     <div class="industries-boxes">
-                        <div class="f-row f-4">
+                        <div class="f-row f-4 f-1440-3 f-990-2 f-640-1">
                         <?php
                             if( have_rows('industries') ): while ( have_rows('industries') ) : the_row(); 
                                 if( have_rows('industries_cards') ): while ( have_rows('industries_cards') ) : the_row();       ?>
@@ -567,6 +569,8 @@ endif; ?>
             <?php endif; ?>
             <!-- steps-ends -->
 
+
+            <div id="about" class="hdr-link"></div>
             <!-- About Starts -->
             <?php
                 $about_data = get_field('about');
@@ -579,7 +583,7 @@ endif; ?>
                             <h2><?php echo $about_data['title']; ?> </h2>
                         </div>
                         <div class="about-wrap-inner">
-                            <div class="f-row f-2">
+                            <div class="f-row f-2 f-990-1">
                                 <div class="f-col">
                                     <div class="about-box">
                                         <div class="about-box-bg">
