@@ -6,14 +6,14 @@
                     <div class="w50">
                         <div class="contact-links">
                             <div class="link">
-                                <a href="tel:919-397-6667">919-397-6667</a>
+                                <a href="tel:919-397-6667"><img src="<?php bloginfo('template_url'); ?>/assets/img/call.svg" alt=""> 919-397-6667</a>
                             </div>
                             <div class="link">
-                                <a href="javascript:void(0)">Morrisville, North Carolina 27560</a>
+                                <a href="javascript:void(0)"><img src="<?php bloginfo('template_url'); ?>/assets/img/fax.svg" alt="">Morrisville, North Carolina 27560</a>
                             </div>
                             <div class="link">
                                 <a
-                                    href="mailto:ryelle@happyliferecruitingagency.com">ryelle@happyliferecruitingagency.com</a>
+                                    href="mailto:ryelle@happyliferecruitingagency.com"><img src="<?php bloginfo('template_url'); ?>/assets/img/mail.svg" alt="">ryelle@happyliferecruitingagency.com</a>
                             </div>
                             <div class="follow-wrap">
                                 <p>Follow us</p>

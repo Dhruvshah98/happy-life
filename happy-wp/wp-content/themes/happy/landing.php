@@ -87,26 +87,44 @@ get_header();
                     <div class="work-bg"></div>
                     <div class="container">
                         <div class="work-container">
-                            <div class="comm-head">
-                                <h2><?php echo $work_section_data['title']; ?></h2>
-                                <p><?php echo $work_section_data['content']; ?></p>
+                            <div class="comm-head" >
+                                <h2  data-aos="fade-up"><?php echo $work_section_data['title']; ?></h2>
+                                <p  data-aos="fade-up"><?php echo $work_section_data['content']; ?></p>
                             </div>
-                            <div class="work-txt-img">
-                                <div class="work-img">
+                            <div class="work-txt-img" >
+                                <div class="work-img" data-aos="fade-right" >
                                     <img src="<?php echo $work_section_data['work_image_1']; ?>" alt="">
+                                    <div class="work-sticker work-sticker-1 sticker" >
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/ws-1.svg" alt="">
+                                    </div>
                                 </div>
-                                <div class="txt-2">
+                                <div class="txt-2"  data-aos="fade-up">
                                     <p><?php echo $work_section_data['work_title']; ?></p>
                                 </div>
-                                <div class="work-img">
+                                <div class="work-img"  data-aos="fade-left">
                                     <img src="<?php echo $work_section_data['work_image_2']; ?>" alt="">
+                                    <div class="work-sticker work-sticker-2 sticker">
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/ws-2.svg" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
+                <div class="work-sticker work-sticker-3 sticker">
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/ws-3.svg" alt="">
+                                    </div>
+                                    <div class="work-sticker work-sticker-4 sticker">
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/ws-4.svg" alt="">
+                                    </div>
                 <div class="work-swiper-wrap">
+                <div class="work-sticker work-sticker-5 sticker">
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/ws-5.svg" alt="">
+                                    </div>
+                                    <div class="work-sticker work-sticker-6 sticker">
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/ws-6.svg" alt="">
+                                    </div>
                     <div class="work-swiper">
                         <div class="swiper swiper-work">
                             <div class="swiper-wrapper">
@@ -265,6 +283,9 @@ get_header();
                         </div>
                     </div>
                 </div>
+                <div class="work-sticker work-sticker-7 sticker">
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/ws-7.svg" alt="">
+                                    </div>
             </div>
             <?php endif; ?>
             <!-- work ends -->
@@ -283,7 +304,7 @@ get_header();
 
 if( have_rows('blogs') ):
     while( have_rows('blogs') ) : the_row(); ?>
-                                <a href="" class="blog-box">
+                                <a href="" class="blog-box" data-aos="fade-up">
                                     <div class="blog-img">
                                         <img src="<?php echo get_sub_field('banner_image');?>" alt="">
                                     </div>
@@ -308,12 +329,12 @@ endif; ?>
                                 <div class="f-row">
                                     <div class="w100">
                                         <div class="blog-head">
-                                            <h6>Blogs & News</h6>
-                                            <h2>What’s hot on the blog</h2>
+                                            <h6 data-aos="fade-up">Blogs & News</h6>
+                                            <h2 data-aos="fade-up">What’s hot on the blog</h2>
                                         </div>
                                     </div>
                                     <div class="w50  w-640-100">
-                                        <a href="" class="blog-box">
+                                        <a href="" class="blog-box" data-aos="fade-up">
                                             <div class="blog-img">
                                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/blog-3.png" alt="">
                                             </div>
@@ -323,7 +344,7 @@ endif; ?>
                                         </a>
                                     </div>
                                     <div class="w50  w-640-100">
-                                        <a href="" class="blog-box">
+                                        <a href="" class="blog-box" data-aos="fade-up">
                                             <div class="blog-img">
                                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/blog-4.png" alt="">
                                             </div>
@@ -333,7 +354,7 @@ endif; ?>
                                         </a>
                                     </div>
                                     <div class="w50  w-640-100">
-                                        <a href="" class="blog-box">
+                                        <a href="" class="blog-box" data-aos="fade-up">
                                             <div class="blog-img">
                                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/blog-5.png" alt="">
                                             </div>
@@ -343,7 +364,7 @@ endif; ?>
                                         </a>
                                     </div>
                                     <a href="" class="w50  w-640-100">
-                                        <div class="blog-box border-round">
+                                        <div class="blog-box border-round" data-aos="fade-up">
                                             <div class="blog-img">
                                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/blog-6.png" alt="">
                                             </div>
@@ -366,7 +387,7 @@ endif; ?>
                         <div class="swiper-button-prev-logo"></div>
                         <div class="swiper-button-next-logo"></div>
                     </div>
-                    <div class="comm-head">
+                    <div class="comm-head" data-aos="fade-up">
                         <h2><?php echo get_field('clients')?></h2>
                         <!-- If we need navigation buttons -->
                     </div>
@@ -438,6 +459,14 @@ endif; ?>
                         </div>
                     </div>
                 </div>
+                <div class="clouds-wrap">
+                    <div class="cloud cloud-1 sticker">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/cloud.svg" alt="">
+                    </div>
+                    <div class="cloud cloud-2 sticker">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/cloud.svg" alt="">
+                    </div>
+                </div>
             </div>
             <!-- clients-ends -->
 
@@ -476,9 +505,9 @@ endif; ?>
                 if( $industries_data ): ?>
             <div class="industries-wrap">
                 <div class="container">
-                    <div class="comm-head">
-                        <h2><?php echo $industries_data['title']; ?></h2>
-                        <p><?php echo $industries_data['sub_title']; ?></p>
+                    <div class="comm-head" >
+                        <h2 data-aos="fade-up"><?php echo $industries_data['title']; ?></h2>
+                        <p data-aos="fade-up"><?php echo $industries_data['sub_title']; ?></p>
                     </div>
                     <div class="industries-boxes">
                         <div class="f-row f-4 f-1440-3 f-990-2 f-640-1">
@@ -486,8 +515,8 @@ endif; ?>
                             if( have_rows('industries') ): while ( have_rows('industries') ) : the_row(); 
                                 if( have_rows('industries_cards') ): while ( have_rows('industries_cards') ) : the_row();       ?>
                             <div class="f-col">
-                                <div class="industry-box">
-                                    <div class="industry-img-box">
+                                <div class="industry-box" data-aos="fade-up">
+                                    <div class="industry-img-box" >
                                         <div class="industry-img">
                                             <img src="<?php  echo get_sub_field('banner_image'); ?>" alt="">
                                         </div>
@@ -528,6 +557,14 @@ endif; ?>
                 $hiring_process_data = get_field('hiring_process');
                 if( $hiring_process_data ): ?>
             <div class="steps-wrap">
+            <div class="clouds-wrap">
+                    <div class="cloud cloud-1 sticker">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/cloud.svg" alt="">
+                    </div>
+                    <div class="cloud cloud-2 sticker">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/cloud.svg" alt="">
+                    </div>
+                </div>
                 <div class="container">
                     <div class="comm-head">
                         <h2><?php echo $hiring_process_data['title']; ?></h2>
@@ -540,7 +577,7 @@ endif; ?>
                             if( have_rows('hiring_process') ): while ( have_rows('hiring_process') ) : the_row(); 
                                 if( have_rows('steps_cards') ): while ( have_rows('steps_cards') ) : the_row();       ?>
                         <?php if($i == 1):?>
-                        <div class="step-box">
+                        <div class="step-box" data-aos="fade-up">
                             <div class="step-btn">
                                 <div class="button"><span>Step <?php echo $i ?></span></div>
                             </div>
@@ -548,12 +585,12 @@ endif; ?>
                             <p><?php  echo get_sub_field('title'); ?></p>
                         </div>
                         <?php else: ?>
-                        <div class="step-box">
+                        <div class="step-box" data-aos="fade-up">
                             <div class="step-btn">
                                 <div class="button"><span>Step <?php echo $i ?></span></div>
                             </div>
                             <div class="step-img">
-                                <img src="<?php bloginfo('template_url'); ?>/assets/img/steps-illus-2.svg" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/steps-illus-<?php echo $i ?>.svg" alt="">
                             </div>
                             <h4><?php  echo get_sub_field('title'); ?></h4>
                             <p><?php  echo get_sub_field('sub_title'); ?></p>
@@ -579,13 +616,13 @@ endif; ?>
                 <div class="about-bg"></div>
                 <div class="about-container">
                     <div class="container">
-                        <div class="comm-head">
-                            <h2><?php echo $about_data['title']; ?> </h2>
+                        <div class="comm-head" >
+                            <h2 data-aos="fade-up"><?php echo $about_data['title']; ?> </h2>
                         </div>
                         <div class="about-wrap-inner">
                             <div class="f-row f-2 f-990-1">
                                 <div class="f-col">
-                                    <div class="about-box">
+                                    <div class="about-box" data-aos="fade-up">
                                         <div class="about-box-bg">
                                             <img src="<?php bloginfo('template_url'); ?>/assets/img/about-box-bg-1.svg" alt="">
                                         </div>
@@ -599,7 +636,7 @@ endif; ?>
                                     </div>
                                 </div>
                                 <div class="f-col">
-                                    <div class="about-box">
+                                    <div class="about-box" data-aos="fade-up">
                                         <div class="about-box-bg about-box-bg-2">
                                             <img src="<?php bloginfo('template_url'); ?>/assets/img/about-box-bg-2.svg" alt="">
                                         </div>
@@ -614,10 +651,10 @@ endif; ?>
 
                                 </div>
                             </div>
-                            <div class="about-btm-txt">
-                                <p class="about-btm-txt-1"><?php echo $about_data['content_1']; ?> </p>
-                                <p class="about-btm-txt-2"><?php echo $about_data['content_2']; ?></p>
-                                <p class="about-btm-txt-3"><?php echo $about_data['content_3']; ?></p>
+                            <div class="about-btm-txt" >
+                                <p data-aos="fade-up" class="about-btm-txt-1"><?php echo $about_data['content_1']; ?> </p>
+                                <p data-aos="fade-up" class="about-btm-txt-2"><?php echo $about_data['content_2']; ?></p>
+                                <p data-aos="fade-up" class="about-btm-txt-3"><?php echo $about_data['content_3']; ?></p>
                             </div>
                         </div>
 
@@ -635,12 +672,12 @@ endif; ?>
                 <div class="container">
                     <div class="candidate-head">
                         <div class="comm-head">
-                            <h6><?php echo $candidate_data['title']; ?></h6>
-                            <h2><?php echo $candidate_data['main_title']; ?></h2>
-                            <p><?php echo $candidate_data['sub_title']; ?></p>
+                            <h6 data-aos="fade-up"><?php echo $candidate_data['title']; ?></h6>
+                            <h2 data-aos="fade-up"><?php echo $candidate_data['main_title']; ?></h2>
+                            <p data-aos="fade-up"><?php echo $candidate_data['sub_title']; ?></p>
                         </div>
                     </div>
-                    <div class="candidate-form-box">
+                    <div class="candidate-form-box" data-aos="fade-up">
                         <div class="candidate-form">
                             <!-- <form action=""> -->
                                 <!-- <div class="form-grp">
@@ -692,7 +729,7 @@ endif; ?>
             <!-- partner starts -->
             <?php $partnership_data = get_field('partnership');
                 if( $partnership_data ): ?>
-            <div class="partner-wrap">
+            <div class="partner-wrap" data-aos="fade-up">
                 <div class="partner-img">
                     <img src="<?php bloginfo('template_url'); ?>/assets/img/bottom-star.png" alt="">
                 </div>
