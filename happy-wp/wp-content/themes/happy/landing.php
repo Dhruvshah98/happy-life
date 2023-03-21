@@ -678,6 +678,9 @@ endif; ?>
                         </div>
                     </div>
                     <div class="candidate-form-box" data-aos="fade-up">
+                        <div class="sticker candidate-sticker">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/candidate-sticker.png" alt="">
+                        </div>
                         <div class="candidate-form">
                             <!-- <form action=""> -->
                                 <!-- <div class="form-grp">
@@ -729,11 +732,11 @@ endif; ?>
             <!-- partner starts -->
             <?php $partnership_data = get_field('partnership');
                 if( $partnership_data ): ?>
-            <div class="partner-wrap" data-aos="fade-up">
-                <div class="partner-img">
+            <div class="partner-wrap" >
+                <div class="partner-img"data-aos="zoom-in" >
                     <img src="<?php bloginfo('template_url'); ?>/assets/img/bottom-star.png" alt="">
                 </div>
-                <div class="container">
+                <div class="container" data-aos="zoom-in">
                     <div class="partner-box">
                         <h3><?php echo $partnership_data['title']; ?></h3>
                         <a href="" class="button blue"><span>Partner with us <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow-right.svg"

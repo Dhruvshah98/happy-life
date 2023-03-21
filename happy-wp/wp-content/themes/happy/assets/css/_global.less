@@ -86,7 +86,7 @@ header {
 .logo {
   display: inline-block;
   vertical-align: middle;
-  width: 300px;
+  width: 200px;
   margin-left: 46px;
   padding-right: 16px;
 }
@@ -831,7 +831,7 @@ header {
 }
 
 .border-round {
-  border-radius: 161px;
+  border-radius: 40%;
 }
 
 .blog-head {
@@ -928,6 +928,7 @@ header {
 .clients-wrap {
   .container {
     position: relative;
+    z-index: 1;
   }
 }
 
@@ -1439,6 +1440,11 @@ header {
 }
 .logo {
   flex: auto;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
 }
 .header-list li {
   padding: 7px 24px;
@@ -1599,4 +1605,12 @@ header {
   right: 0;
   display: flex;
   justify-content: flex-start;
+}
+.candidate-form-box {
+  position: relative;
+}
+
+.sticker {
+  top: -9%;
+  right: -8%;
 }

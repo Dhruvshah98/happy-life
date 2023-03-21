@@ -3,7 +3,7 @@
         <div class="footer-box">
             <div class="container">
                 <div class="f-row">
-                    <div class="w50">
+                    <div class="w50 w-768-100">
                         <div class="contact-links">
                             <div class="link">
                                 <a href="tel:919-397-6667"><img src="<?php bloginfo('template_url'); ?>/assets/img/call.svg" alt=""> 919-397-6667</a>
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w50">
+                    <div class="w50 w-768-100">
                         <div class="footer-left">
                             <div class="logo">
                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" alt="">
